@@ -1,0 +1,53 @@
+# Node.js dependencies (if using npm/yarn)
+node_modules/
+
+# Build output directories
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment and config
+.env
+.env.local
+.env.*.local
+
+# Cache files
+.cache/
+.tmp/
+*.tmp
+*.bak
+
+# Coverage and test output
+coverage/
+*.lcov
+
+# Parcel, Next.js, etc. specific
+.next/
+out/
+.serve/
+
+# macOS Finder tags
+._*
+
+# Optional: ignore compiled CSS from preprocessors like Sass
+*.css.map
+*.scssc
+
+# Optional: ignore transpiled JS files (e.g., from TypeScript)
+*.js.map
+*.tsbuildinfo
