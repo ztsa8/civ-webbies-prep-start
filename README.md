@@ -1,4 +1,4 @@
-# User Profile Rendering Project
+# User Profile Rendering Project - Zaneta Tsang
 
 This project demonstrates a progressive enhancement of a JavaScript-based user profile viewer using [Bulma CSS](https://bulma.io) and modular JavaScript. The app evolves from a static HTML rendering of one user profile to a responsive, card-based dashboard of multiple users deployed via GitHub Pages.
 
