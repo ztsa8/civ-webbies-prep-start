@@ -66,29 +66,16 @@ let profileHTML = `
   <div class="box">
     <h2 class="title is-4">Orders</h2>
     <div class="content">
-      <ul>
-        <li class="mb-4">
-          <strong>Order ID:</strong> ${user.orders[0].orderId}<br>
-          <strong>Product:</strong> ${user.orders[0].product}<br>
-          <strong>Quantity:</strong> ${user.orders[0].quantity}<br>
-          <strong>Price:</strong> $${user.orders[0].price.toFixed(2)}<br>
-          <strong>Date:</strong> ${user.orders[0].date.toLocaleDateString()}
-        </li>
-        <li class="mb-4">
-          <strong>Order ID:</strong> ${user.orders[1].orderId}<br>
-          <strong>Product:</strong> ${user.orders[1].product}<br>
-          <strong>Quantity:</strong> ${user.orders[1].quantity}<br>
-          <strong>Price:</strong> $${user.orders[1].price.toFixed(2)}<br>
-          <strong>Date:</strong> ${user.orders[1].date.toLocaleDateString()}
-        </li>
-        <li class="mb-4">
-          <strong>Order ID:</strong> ${user.orders[2].orderId}<br>
-          <strong>Product:</strong> ${user.orders[2].product}<br>
-          <strong>Quantity:</strong> ${user.orders[2].quantity}<br>
-          <strong>Price:</strong> $${user.orders[2].price.toFixed(2)}<br>
-          <strong>Date:</strong> ${user.orders[2].date.toLocaleDateString()}
-        </li>
-      </ul>
+        ${user.orders.map((order) => `
+          <div class="card mb-3">
+            <div class="card-content">
+              <strong>Order ID:</strong> ${order.orderId}<br>
+              <strong>Product:</strong> ${order.product}<br>
+              <strong>Quantity:</strong> ${order.quantity}<br>
+              <strong>Price:</strong> $${order.price.toFixed(2)}<br>
+              <strong>Date:</strong> ${order.date.toLocaleDateString()}
+        `)}
+    
     </div>
   </div>
   
